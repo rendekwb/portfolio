@@ -1,0 +1,51 @@
+/* Variables */
+:root {
+  --site-blue: #1C1A41;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+#landing-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 300px;
+  width: 400px;
+  margin: auto;
+  border: 10px solid var(--site-blue);
+  box-shadow: 0 2px 4px #777;
+  color: var(--site-blue);
+  box-sizing: border-box;
+}
+
+#name {
+  margin: 20px 0;
+  font-size: 28pt;
+  font-family: 'Futura', sans-serif;
+}
+
+#description {
+  margin: 10px 0;
+  font-size: 16pt;
+  font-family: 'Avenir Next', sans-serif;
+}
+
+#landing-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  width: 100%;
+  margin: auto 5px 30px 5px;
+  box-sizing: border-box;
+  font-family: 'Futura', sans-serif;
+  font-size: 14pt;
+}
