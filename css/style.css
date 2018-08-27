@@ -29,6 +29,80 @@ a:active {
   color: var(--site-blue);
 }
 
+.vertical-stripe {
+  position: absolute;
+  top: 0px;
+  height: 100vh;
+  background: var(--site-blue);
+}
+
+#vertical-stripe-1 {
+  left: 10%;
+  width: 7%;
+  opacity: 0.90;
+}
+
+#vertical-stripe-2 {
+  left: 25%;
+  width: 3%;
+  opacity: 0.70;
+}
+
+#vertical-stripe-3 {
+  left: 55%;
+  width: 6%;
+  opacity: 0.50;
+}
+
+#vertical-stripe-4 {
+  left: 75%;
+  width: 2%;
+  opacity: 0.90;
+}
+
+#vertical-stripe-5 {
+  left: 80%;
+  width: 4%;
+  opacity: 0.70;
+}
+
+.horizontal-stripe {
+  position: absolute;
+  left: 0px;
+  width: 100vw;
+  background: var(--site-blue);
+}
+
+#horizontal-stripe-1 {
+  top: 8%;
+  height: 10%;
+  opacity: 0.60;
+}
+
+#horizontal-stripe-2 {
+  top: 35%;
+  height: 7%;
+  opacity: 0.90;
+}
+
+#horizontal-stripe-3 {
+  top: 45%;
+  height: 9%;
+  opacity: 0.50;
+}
+
+#horizontal-stripe-4 {
+  top: 70%;
+  height: 12%;
+  opacity: 0.30;
+}
+
+#horizontal-stripe-5 {
+  top: 90%;
+  height: 6%;
+  opacity: 0.70;
+}
+
 #landing-content-box {
   display: flex;
   flex-direction: column;
@@ -37,10 +111,12 @@ a:active {
   height: 400px;
   width: 500px;
   margin: auto;
+  background-color: #ffffff;
   border: 10px solid var(--site-blue);
   box-shadow: 0 2px 4px var(--site-blue);
   color: var(--site-blue);
   box-sizing: border-box;
+  z-index: 1000;
 }
 
 #name {
@@ -220,7 +296,7 @@ footer {
   }
 
   #landing-content-box {
-    height: 250px;
+    height: 300px;
     width: 350px;
   }
 
