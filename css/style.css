@@ -6,35 +6,51 @@
 html, body {
   padding: 0;
   margin: 0;
+  background-color: var(--site-blue);
+}
+
+.full-view-section {
+  min-height: 100vh;
 }
 
 section {
-  height: 100vh;
   width: 100vw;
   display: flex;
+  background-color: #fafafa;
+}
+
+a {
+  text-decoration: none;
+  color: var(--site-blue);
+}
+
+a:active {
+  text-decoration: none;
+  color: var(--site-blue);
 }
 
 #landing-content-box {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 300px;
-  width: 400px;
+  justify-content: space-evenly;
+  height: 400px;
+  width: 500px;
   margin: auto;
   border: 10px solid var(--site-blue);
-  box-shadow: 0 2px 4px #777;
+  box-shadow: 0 2px 4px var(--site-blue);
   color: var(--site-blue);
   box-sizing: border-box;
 }
 
 #name {
-  margin: 20px 0;
+  /*margin: 20px 0;*/
   font-size: 28pt;
   font-family: 'Futura', sans-serif;
 }
 
 #description {
-  margin: 10px 0;
+  /* margin: 10px 0; */
   font-size: 16pt;
   font-family: 'Avenir Next', sans-serif;
 }
@@ -44,8 +60,171 @@ section {
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   width: 100%;
-  margin: auto 5px 30px 5px;
+  /* margin: auto 5px 30px 5px; */
   box-sizing: border-box;
   font-family: 'Futura', sans-serif;
   font-size: 14pt;
+}
+
+.landing-button {
+  cursor: pointer;
+}
+
+.button-underline {
+  height: 3px;
+  width: 10px;
+  background-color: var(--site-blue);
+  transition: all 0.3s ease-in-out;
+}
+
+.landing-button:hover > .button-underline {
+  width: 100%;
+}
+
+footer {
+  height: 50px;
+  display: flex;
+  background-color: var(--site-blue);
+  justify-content: center;
+  align-items: center;
+  color: #fafafa;
+  font-family: 'Avenir Next', sans-serif;
+  z-index: -1;
+}
+
+#about-section-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: auto;
+  height: 80%;
+  width: 75%;
+}
+
+.i-flip {
+  transform-origin: center center;
+  transform: rotate(180deg);
+}
+
+#work-section {
+  display: flex;
+}
+
+#work-message {
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 75px;
+  color: var(--site-blue);
+  margin: auto;
+  text-align: center;
+}
+
+#about-text-section {
+  font-size: 24pt;
+  font-family: 'Avenir Next', sans-serif;
+  color: var(--site-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+#about-image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#contact-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  height: 100%;
+  margin: 20px auto;
+  color: var(--site-blue);
+  font-family: 'Avenir Next', sans-serif;
+  font-size: 16pt;
+  text-align: center;
+}
+
+.contact-info-container {
+  margin: 10px 0;
+}
+
+#social-container {
+  display: flex;
+  justify-content: center;
+}
+
+#social-container > div {
+  margin: 0 20px;
+  transition: all 0.1s ease-in-out;
+}
+
+#social-container > div:hover {
+  transform: scale(1.05);
+}
+
+#about-image {
+  width: 90%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 6px var(--site-blue);
+}
+
+/**********************
+**** Media Queries ****
+**********************/
+@media(max-width: 1600px){
+  #about-text-section {
+    font-size: 20pt;
+  }
+}
+
+@media(max-width: 1300px){
+  #about-text-section {
+    font-size: 18pt;
+  }
+
+  #work-message {
+    font-size: 36pt;
+  }
+
+  #landing-content-box {
+    height: 300px;
+    width: 400px;
+  }
+}
+
+@media(max-width: 1200px){
+  #about-section-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-image {
+    width: 50%;
+  }
+}
+
+@media(max-width: 850px) {
+  #about-text-section {
+    font-size: 14pt;
+  }
+
+  #work-message {
+    font-size: 24pt;
+  }
+
+  #landing-content-box {
+    height: 250px;
+    width: 350px;
+  }
+
+  #about-image {
+    width: 80%;
+  }
 }
