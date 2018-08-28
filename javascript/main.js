@@ -19,6 +19,10 @@ let contactBtn = document.getElementById('contact-button');
 contactBtn.addEventListener('click', scrollToSection);
 contactBtn.section = 'contact-section';
 
+window.addEventListener('touchstart', function onFirstTouch() {
+  alert('This is a touch screen!');
+})
+
 window.addEventListener('scroll', function() {
     var landingSection = document.getElementById('landing-section');
     var rect = landingSection.getBoundingClientRect();
