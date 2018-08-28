@@ -20,6 +20,7 @@ contactBtn.addEventListener('click', scrollToSection);
 contactBtn.section = 'contact-section';
 
 window.addEventListener('touchstart', function onFirstTouch() {
+  $('.landing-button').mouseover();
   $('.button-underline').css('transition', 'none').css('width', '100%');
 })
 
@@ -28,9 +29,10 @@ window.addEventListener('scroll', function() {
     var rect = landingSection.getBoundingClientRect();
     var elemTop = rect.top;
     var elemBottom = rect.bottom;
-
-    // Partially visible elements return true:
-    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    
+    // // Partially visible elements return true:
+    // var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    var isVisible = ($(this).scrollTop() === 0);
     if(isVisible) {
       $('#stripes-container').addClass('fade-in');
       $('#stripes-container').removeClass('fade-out');

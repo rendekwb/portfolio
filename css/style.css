@@ -9,6 +9,10 @@ html, body {
   background-color: var(--site-blue);
 }
 
+.container {
+  background-color: #ffffff;
+}
+
 .full-view-section {
   min-height: 100vh;
 }
