@@ -20,7 +20,7 @@ contactBtn.addEventListener('click', scrollToSection);
 contactBtn.section = 'contact-section';
 
 window.addEventListener('touchstart', function onFirstTouch() {
-  alert('This is a touch screen!');
+  $('.button-underline').css('transition', 'none').css('width', '100%');
 })
 
 window.addEventListener('scroll', function() {
