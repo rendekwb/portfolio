@@ -281,7 +281,7 @@ footer {
   }
 
   #landing-content-box {
-    height: 300px;
+    height: 500px;
     width: 400px;
   }
 }
@@ -298,8 +298,17 @@ footer {
 }
 
 @media(max-width: 850px) {
+  .button-underline {
+    width: 100%;
+    transition: none;
+  }
+
   #about-text-section {
     font-size: 12pt;
+  }
+
+  #work-section {
+    min-height: 30vh;
   }
 
   #work-message {
@@ -307,7 +316,7 @@ footer {
   }
 
   #landing-content-box {
-    height: 300px;
+    height: 500px;
     width: 350px;
   }
 
