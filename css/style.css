@@ -153,6 +153,7 @@ footer {
   display: inline-block;
   font-size: 12pt;
   transform: rotate(-5deg) translateY(-7px);
+  margin: 0 5px;
 }
 
 /**********************
