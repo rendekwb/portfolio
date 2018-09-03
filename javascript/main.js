@@ -23,9 +23,8 @@ window.addEventListener('scroll', function() {
     var headerElem = document.getElementsByClassName('text-header')[0];
     var footerElem = document.querySelector('footer');
     var headerInView = isScrolledIntoView(headerElem);
-    var footerInView = isScrolledIntoView(footerElem);
     var button = $('#to-top-button');
-    if(headerInView) { button.hide(); } else { button.show(); }
+    if(headerInView) { button.fadeOut(); } else { button.fadeIn(); }
     scrollHandling.allow = false;
     setTimeout(scrollHandling.reallow, scrollHandling.delay);
   }
