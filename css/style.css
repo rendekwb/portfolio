@@ -32,14 +32,13 @@ html, body {
   font-family: 'Raleway', sans-serif;
   font-size: 28pt;
   color: #6a727c;
-  margin: 10px 0 15px;
+  margin-top: 10px;
 }
 
 .text-subheader {
   font-family: 'Raleway', sans-serif;
   font-size: 22pt;
   color: #6a727c;
-  margin: 10px 0 15px;
 }
 
 #social-container {
@@ -96,19 +95,19 @@ footer {
 .row-section {
   display: flex;
   align-items: center;
-  margin-right: 50px;
+  margin: 10px 50px 10px 0;
 }
 
 .column {
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
 }
 
 .work-content {
   font-family: 'Raleway', sans-serif;
   font-size: 16pt;
   color: #6a727c;
-  margin: 10px 0 15px;
 }
 
 .work-header {
@@ -117,11 +116,16 @@ footer {
   font-weight: 700;
   font-size: 18pt;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .work-header a, .work-header a:active {
   color: #0099e6;
   text-decoration: none;
+}
+
+.envelope {
+  color: #0099e6;
 }
 
 #to-top-button {
@@ -145,7 +149,11 @@ footer {
   transform: scale(1.05);
 }
 
-
+#click-here {
+  display: inline-block;
+  font-size: 12pt;
+  transform: rotate(-5deg) translateY(-7px);
+}
 
 /**********************
 **** Media Queries ****
@@ -189,5 +197,12 @@ footer {
 
   .content-text, .work-content {
     font-size: 12pt;
+  }
+}
+
+@media(max-width: 500px) {
+  #social-container > div {
+    font-size: 22pt;
+    margin: 0 25px;
   }
 }

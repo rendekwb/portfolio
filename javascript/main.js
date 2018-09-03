@@ -1,7 +1,4 @@
-$(document).ready(function() {
-  $('#to-top-button').hide();
-});
-
+$('#to-top-button').hide();
 document.getElementById('to-top-button').addEventListener('click', function() {
   window.scroll({
     top: 0,
