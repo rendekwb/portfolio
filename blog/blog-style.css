@@ -1,0 +1,45 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+header {
+  height: 40vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.main-header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 48pt;
+  color: #0099e6;
+  text-align: center;
+}
+
+.sub-header {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18pt;
+  color: #6a727c;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.container {
+  width: 80vw;
+  margin: 0 10vw;
+  border-top: 2px solid #6a727c;
+}

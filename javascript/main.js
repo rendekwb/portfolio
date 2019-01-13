@@ -36,3 +36,10 @@ function isScrolledIntoView(elem) {
 
     return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
 }
+$('#hamburger-icon').click(function() {
+  $('#slide-out-menu').addClass('slide-in');
+});
+
+$('#menu-close-icon').click(function() {
+  $('#slide-out-menu').removeClass('slide-in');
+});

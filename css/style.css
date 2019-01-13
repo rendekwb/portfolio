@@ -8,8 +8,54 @@ html, body {
   height: 100%;
 }
 
+header {
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+#hamburger-icon {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  margin: 15px 50px;
+  cursor: pointer;
+}
+
+#hamburger-icon span {
+  width: 90%;
+  height: 10%;
+  background-color: #6a727c;
+  border-radius: 2px;
+
+}
+
+header ul {
+  padding: 15px 50px;
+  list-style-type: none;
+}
+
+header li {
+  margin: 0 10px;
+  font-family: 'Raleway', sans-serif;
+  color: #0099e6;
+  font-size: 16pt;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+header li a {
+  color: #0099e6;
+}
+
 .content {
-  padding: 75px 5vw;
+  padding: 0 5vw 15vh;
   min-height: 100%;
   margin-bottom: -50px;
 }
@@ -156,6 +202,55 @@ footer {
   margin: 0 5px;
 }
 
+#slide-out-menu {
+  position: absolute;
+  top: 0%;
+  right: -100%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0099e6;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+#slide-out-menu.slide-in {
+  transition: 0.5s;
+  right: 0%;
+}
+
+#menu-close-icon {
+  height: 10px;
+  width: 10px;
+  background-color: tomato;
+  position: absolute;
+  top: 5%;
+  right: 3%;
+}
+
+#link-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 25vh;
+  min-width: 15vw;
+}
+
+#link-container a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 24pt;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+#link-container span {
+  border-top: 2px solid #ffffff;
+  width: 100%;
+}
+
 /**********************
 **** Media Queries ****
 **********************/
@@ -198,6 +293,14 @@ footer {
 
   .content-text, .work-content {
     font-size: 12pt;
+  }
+
+  #hamburger-icon {
+    display: flex;
+  }
+
+  #nav-list {
+    display: none;
   }
 }
 
